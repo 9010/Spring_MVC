@@ -4,9 +4,4 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
-    <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
-    <bean name="/queryFruits.action" class="cn.com.mvc.controller.FruitsControllerTest"/>
-
 </beans>
