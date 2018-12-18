@@ -1,24 +1,22 @@
 package cn.com.mvc.controller;
 
-
-import java.util.ArrayList;
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.Controller;
 
 import cn.com.mvc.model.Fruits;
+import cn.com.mvc.service.FruitsService;
+import cn.com.mvc.service.FruitsServiceImpl;
 
-public class FruitsControllerTest implements Controller {
+@Controller
+public class FruitsControllerTest{
 
-    private FruitsService fruitesService = new FruitsService();
+    private FruitsService fruitesService = new FruitsServiceImpl();
 
-    @Override
-    public ModelAndView handleRequest(HttpServletRequest request,
-                                      HttpServletResponse response) throws Exception{
+    @RequestMapping("/queryFruits")
+    public ModelAndView queryFruits() throws Exception{
         //模拟Service获取水果列表
         List<Fruits> fruitsList = fruitesService.queryFruitsList();
         //返回ModelAndView
@@ -26,27 +24,9 @@ public class FruitsControllerTest implements Controller {
         //相当于request的setAttribut，在Jsp页面中通过fruitsList获取数据
         modelAndView.addObject("fruitsList", fruitsList);
         //指定视图
-        modelAndView.setViewName("WEB-INF/jsp/fruits/fruitsList.jsp");
+        modelAndView.setViewName("fruits/fruitsList");
         return modelAndView;
     }
 }
 
-class FruitsService{
-    public List<Fruits> queryFruitsList(){
-        List<Fruits> fruitsList = new ArrayList<>();
 
-        Fruits apple = new Fruits();
-        apple.setName("红富士苹果");
-        apple.setPrice(2.3);
-        apple.setProducing_area("山东");
-
-        Fruits banana = new Fruits();
-        banana.setName("香蕉");
-        banana.setPrice(1.5);
-        banana.setProducing_area("上海");
-
-        fruitsList.add(apple);
-        fruitsList.add(banana);
-        return fruitsList;
-    }
-}
