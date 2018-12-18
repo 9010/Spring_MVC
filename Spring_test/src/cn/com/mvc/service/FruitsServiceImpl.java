@@ -5,9 +5,12 @@ import java.util.List;
 
 import cn.com.mvc.model.Fruits;
 
+/**
+ * FruitsService 实现类
+ */
 public class FruitsServiceImpl implements FruitsService {
     public List<Fruits> fruitsList = null;
-    private List<Fruits> init() {
+    private List<Fruits> init() {  //初始化函数，模拟数据库
         if (fruitsList == null){
             fruitsList = new ArrayList<>();
 
@@ -52,14 +55,12 @@ public class FruitsServiceImpl implements FruitsService {
         String name = fruits.getName();
         String area = fruits.getProducing_area();
         List<Fruits> queryList = new ArrayList<>();
-        System.out.println(name + "   " + area);
         Fruits f;
         for (int i = 0; i < fruitsList.size(); i++){
             f = fruitsList.get(i);
             if ( (!name.equals("") && f.getName().equals(name)) ||
                     (!area.equals("") && f.getProducing_area().equals(area))){
                 queryList.add(f);
-                System.out.println("111111111");
             }
         }
         return queryList.size() > 0 ? queryList : null;

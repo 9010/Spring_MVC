@@ -1,5 +1,8 @@
 package cn.com.mvc.model;
 
+/**
+ * Fruits 封装类
+ */
 public class Fruits {
     private int id;
     private String name;

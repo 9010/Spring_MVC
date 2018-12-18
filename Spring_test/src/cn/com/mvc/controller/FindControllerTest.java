@@ -18,16 +18,14 @@ public class FindControllerTest {
     @RequestMapping("queryFruitsByCondition")
     public String queryFruitsByCondition(Model model, Fruits fruits){
         List<Fruits> findList = null;
-        System.out.println(fruits.getName() + "123");
-        System.out.println("-------++-----");
         if (fruits == null || (fruits.getName() == null && fruits.getProducing_area() == null)){
             //如果fruits或查询条件为空，默认查询所有数据
             findList = fruitsService.queryFruitsList();
-            System.out.println("---------------");
+            //System.out.println("---------------");
         }else {
             //如果fruits查询条件不为空，按条件查询
             findList = fruitsService.queryFruitsByCondition(fruits);
-            System.out.println("---------000000-");
+            //System.out.println("+++++++++++++++");
         }
         model.addAttribute("fruitsList", findList);
         return "/fruits/findFruits";
