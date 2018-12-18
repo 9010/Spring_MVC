@@ -16,13 +16,13 @@ public class FruitsServiceImpl implements FruitsService {
 
             Fruits apple = new Fruits();
             apple.setId(1);
-            apple.setName("Apple");
+            apple.setName("苹果");
             apple.setPrice(2.3);
             apple.setProducing_area("China");
 
             Fruits banana = new Fruits();
             banana.setId(2);
-            banana.setName("Banana");
+            banana.setName("香蕉");
             banana.setPrice(1.3);
             banana.setProducing_area("Japan");
 
