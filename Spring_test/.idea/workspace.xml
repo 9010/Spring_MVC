@@ -7,13 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4c49ff6-782c-41cf-8703-dc6055648204" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Validator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resource/ProductValidationMessages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Spring_test_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Spring_test_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_test_war_exploded/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_test_war_exploded/WEB-INF/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_test_war_exploded/WEB-INF/classes/cn/com/mvc/controller/FindControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_test_war_exploded/WEB-INF/classes/cn/com/mvc/controller/FindControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_test_war_exploded/WEB-INF/classes/cn/com/mvc/service/FruitsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_test_war_exploded/WEB-INF/classes/cn/com/mvc/service/FruitsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_test_war_exploded/WEB-INF/classes/cn/com/mvc/model/Fruits.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_test_war_exploded/WEB-INF/classes/cn/com/mvc/model/Fruits.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Spring_test/cn/com/mvc/controller/FindControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Spring_test/cn/com/mvc/controller/FindControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Spring_test/cn/com/mvc/service/FruitsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Spring_test/cn/com/mvc/service/FruitsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/com/mvc/service/FruitsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/com/mvc/service/FruitsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Spring_test/cn/com/mvc/model/Fruits.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Spring_test/cn/com/mvc/model/Fruits.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/com/mvc/controller/FindControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/com/mvc/controller/FindControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/com/mvc/model/Fruits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/com/mvc/model/Fruits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,7 +78,7 @@
     <session id="1256249486">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.77" value="1" />
@@ -81,32 +87,36 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2088" />
+          <entry key="java" value="2374" />
           <entry key="jsp" value="351" />
+          <entry key="properties" value="125" />
           <entry key="txt" value="13" />
-          <entry key="xml" value="424" />
+          <entry key="xml" value="1155" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2088" />
+          <entry key="JAVA" value="2374" />
           <entry key="JSP" value="351" />
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="XML" value="424" />
+          <entry key="Properties" value="125" />
+          <entry key="XML" value="1155" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="28" />
+          <entry key="java" value="31" />
           <entry key="jsp" value="3" />
-          <entry key="xml" value="3" />
+          <entry key="properties" value="10" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="28" />
+          <entry key="JAVA" value="31" />
           <entry key="JSP" value="3" />
-          <entry key="XML" value="3" />
+          <entry key="Properties" value="10" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -116,53 +126,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/fruits/findFruits.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/com/mvc/controller/FruitsControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/com/mvc/controller/FindControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="22" column="55" lean-forward="true" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-306">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cn/com/mvc/service/FruitsServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+            <state relative-caret-position="179">
+              <caret line="35" column="46" lean-forward="true" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/com/mvc/model/Fruits.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resource/ProductValidationMessages.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="1" column="44" lean-forward="true" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -197,12 +192,15 @@
         <option value="$PROJECT_DIR$/src/cn/com/mvc/controller/FruitsService.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/fruits/findFruits.jsp" />
         <option value="$PROJECT_DIR$/src/cn/com/mvc/service/FruitsService.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/mvc/controller/FindControllerTest.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/cn/com/mvc/model/Fruits.java" />
         <option value="$PROJECT_DIR$/src/cn/com/mvc/controller/FruitsControllerTest.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/cn/com/mvc/service/FruitsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/com/mvc/model/Fruits.java" />
+        <option value="$PROJECT_DIR$/src/cn/com/mvc/controller/FindControllerTest.java" />
+        <option value="$PROJECT_DIR$/out/artifacts/Spring_test_war_exploded/WEB-INF/classes/ProductValidationMessages.properties" />
+        <option value="$PROJECT_DIR$/config/ProductValidationMessages.properties" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/resource/ProductValidationMessages.properties" />
       </list>
     </option>
   </component>
@@ -225,6 +223,29 @@
     <option name="width" value="1938" />
     <option name="height" value="1052" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+          <State>
+            <id>XMLSpring CoreSpring</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpringXmlModelInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -234,8 +255,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,13 +273,7 @@
               <item name="Spring_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spring_test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Spring_test" type="b2602c69:ProjectViewProjectNode" />
@@ -280,22 +295,25 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545121219887" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545202199242" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\11066\Documents\GitHub\Spring_MVC\Spring_test\src" />
+      <recent name="C:\Users\11066\Documents\GitHub\Spring_MVC\Spring_test\config" />
+      <recent name="C:\Users\11066\Documents\GitHub\Spring_MVC\Spring_test\src\cn\com\mvc\model" />
+      <recent name="C:\Users\11066\Documents\GitHub\Spring_MVC\Spring_test\src\cn\com\mvc\controller" />
+      <recent name="C:\Users\11066\Documents\GitHub\Spring_MVC\Spring_test\web\WEB-INF" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\11066\Documents\GitHub\Spring_MVC\Spring_test\src\cn\com\mvc\controller" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Code\Spring_test\web\WEB-INF" />
-      <recent name="C:\Code\Spring_test\web\WEB-INF\jsp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -411,13 +429,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19419000" />
+    <option name="totallyTimeSpent" value="26366000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18896447" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1919879" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -426,8 +443,8 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35458168" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32934928" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4422311" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -440,6 +457,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
+      <window_info anchor="right" id="Bean Validation" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -515,41 +533,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="18" column="51" lean-forward="true" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/mvc/model/Fruits.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/fruits/findFruits.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/mvc/controller/FindControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="22" column="55" lean-forward="true" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -565,11 +552,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/com/mvc/service/FruitsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
+        <state relative-caret-position="416">
           <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/Spring_test_war_exploded/WEB-INF/classes/ProductValidationMessages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/mvc/controller/FindControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/mvc/model/Fruits.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/ProductValidationMessages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="44" lean-forward="true" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="35" column="46" lean-forward="true" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -592,7 +627,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring</last-edited>
+          <last-edited>Web (Spring_test)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -652,7 +687,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>LIB</last-edited>
+          <last-edited>Validator</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

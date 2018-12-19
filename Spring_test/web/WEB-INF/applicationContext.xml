@@ -16,12 +16,32 @@
     -->
 
     <!-- 自动使用注解的映射器和适配器 -->
-    <mvc:annotation-driven></mvc:annotation-driven>
+    <mvc:annotation-driven conversion-service="conversionService" validator="validator"></mvc:annotation-driven>
 
     <!-- 手动配置方式，一般使用这两个，成对出现
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"></bean>
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"></bean>
     -->
+
+    <!-- 校验器 -->
+    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+        <property name="providerClass" value="org.hibernate.validator.HibernateValidator"/>
+        <property name="validationMessageSource" ref="messageSource"/>
+    </bean>
+
+    <!-- 校验错误信息配置文件 -->
+    <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basenames">
+            <list>
+                <value>classpath:ProductValidationMessages</value>
+            </list>
+        </property>
+        <property name="fileEncodings" value="UTF-8"/>
+        <property name="cacheSeconds" value="120"/>
+    </bean>
+
+    <!-- conversionService -->
+    <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean"/>
 
     <!-- 配置视图解析器，添加前缀，后缀 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

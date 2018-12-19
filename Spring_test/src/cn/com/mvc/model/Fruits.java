@@ -1,12 +1,16 @@
 package cn.com.mvc.model;
 
+import javax.validation.constraints.Size;
+import org.hibernate.validator.constraints.NotEmpty;
 /**
  * Fruits 封装类
  */
 public class Fruits {
     private int id;
+    @Size(min = 1, max = 20, message = "{fruits.name.length.error}")
     private String name;
     private double price;
+    @NotEmpty(message = "{fruits.producing_area.isEmpty}")
     private String producing_area;
 
     public int getId() { return id; }
