@@ -96,6 +96,7 @@
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
         </dependency>
+        <!-- StringUtil -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
@@ -117,7 +118,7 @@
                     <verbose>true</verbose>
                 </configuration>
 
-                <!-- mysql-connector和tk.mybatis.mapper需要在generator plugin中单独配置 -->
+                <!-- mysql-connector和tk.mybatis.mapper需要在generator plugin中额外单独配置一次 -->
                 <dependencies>
                     <dependency>
                         <groupId>mysql</groupId>
