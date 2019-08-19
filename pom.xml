@@ -92,7 +92,8 @@
                     <overwrite>true</overwrite>
                     <verbose>true</verbose>
                 </configuration>
-                <!-- mysql-connector 需要在generator plugin中单独配置 -->
+
+                <!-- mysql-connector和tk.mybatis.mapper需要在generator plugin中单独配置 -->
                 <dependencies>
                     <dependency>
                         <groupId>mysql</groupId>
