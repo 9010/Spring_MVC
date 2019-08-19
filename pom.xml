@@ -32,6 +32,7 @@
         <lombox.version>1.18.8</lombox.version>
         <spring-boot-pagehelper.version>1.2.12</spring-boot-pagehelper.version>
         <guava.version>27.0.1-jre</guava.version>
+        <org-apache-commons-lang3.version>3.9</org-apache-commons-lang3.version>
         <!-- Other Settings End -->
     </properties>
 
@@ -76,6 +77,14 @@
         </dependency>
         <!-- Spring Boot End -->
 
+        <!-- DataBase Start -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+        <!-- DataBase End -->
+
         <!-- Other Start -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -86,6 +95,11 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${org-apache-commons-lang3.version}</version>
         </dependency>
         <!-- Other End -->
     </dependencies>

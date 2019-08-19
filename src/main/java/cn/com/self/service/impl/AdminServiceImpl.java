@@ -4,12 +4,15 @@ import cn.com.self.domain.TbSysUser;
 import cn.com.self.mapper.TbSysUserMapper;
 import cn.com.self.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
 import tk.mybatis.mapper.entity.Example;
 
+@Service
 @Transactional(readOnly = true)  //数据库只读
 public class AdminServiceImpl implements AdminService {
+
     @Autowired
     private TbSysUserMapper tbSysUserMapper;
 
