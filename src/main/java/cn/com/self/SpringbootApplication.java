@@ -1,4 +1,4 @@
-package cn.com.sel;
+package cn.com.self;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

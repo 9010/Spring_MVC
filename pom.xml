@@ -176,6 +176,7 @@
     </build>
 
     <repositories>
+        <!-- 资源仓库镜像 -->
         <repository>
             <id>aliyun-repos</id>
             <name>Aliyun Repository</name>
@@ -190,6 +191,7 @@
     </repositories>
 
     <pluginRepositories>
+        <!-- 插件镜像 -->
         <pluginRepository>
             <id>aliyun-repos</id>
             <name>Aliyun Repository</name>

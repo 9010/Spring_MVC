@@ -1,4 +1,4 @@
-package cn.com.sel;
+package cn.com.self;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
