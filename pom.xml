@@ -31,7 +31,7 @@
         <!-- Other Settings Start -->
         <lombox.version>1.18.8</lombox.version>
         <spring-boot-pagehelper.version>1.2.12</spring-boot-pagehelper.version>
-        <guava.version>27.0.1-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
         <org-apache-commons-lang3.version>3.9</org-apache-commons-lang3.version>
         <!-- Other Settings End -->
     </properties>
